@@ -56,7 +56,9 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="button-primary">Заказать услугу</button>
+          <button class="button-primary" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -113,15 +115,23 @@
             </li>
           </ul>
         </div>
-        <div class="backdrop is-hidden">
+        <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Accusantium recusandae qui enim esse ad dolore doloribus dolorum
-              deserunt hic dolorem, odit voluptate laboriosam dolor quisquam.
-              Nemo quos accusantium voluptate quo!
-            </p>
-            <button>close</button>
+            <form action="#">
+              <label for="name">Имя</label>
+              <input type="text" name="name" id="name" />
+              <label for="tel">Телефон</label>
+              <input type="tel" name="tel" id="tel" />
+              <label for="mail">Почта</label>
+              <input type="email" name="mail" id="mail" />
+              <textarea name="comment" id="comment"></textarea>
+              <input type="checkbox" name="" id="" />
+              <label for=""
+                >Соглашаюсь с рассылкой и принимаю Условия договора</label
+              >
+
+              <button data-modal-close>Отправить</button>
+            </form>
           </div>
         </div>
       </section>
@@ -422,5 +432,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
