@@ -118,26 +118,56 @@
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <form action="#">
-              <h2>Оставьте свои данные, мы вам перезвоним</h2>
+              <h2 class="form-title">
+                Оставьте свои данные, мы вам перезвоним
+              </h2>
               <div class="form-field">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-input"
+                  placeholder=" "
+                />
                 <label for="name" class="form-label">Имя</label>
-                <input type="text" name="name" id="name" class="form-input" />
               </div>
               <div class="form-field">
+                <input
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  class="form-input"
+                  placeholder=" "
+                />
                 <label for="tel" class="form-label">Телефон</label>
-                <input type="tel" name="tel" id="tel" />
               </div>
               <div class="form-field">
+                <input
+                  type="email"
+                  name="mail"
+                  id="mail"
+                  class="form-input"
+                  placeholder=" "
+                />
                 <label for="mail" class="form-label">Почта</label>
-                <input type="email" name="mail" id="mail" />
               </div>
               <div class="form-field">
-                <label for="comment" class="form-label">Комментарий</label>
-                <textarea name="comment" id="comment"></textarea>
+                <textarea
+                  name="comment"
+                  id="comment"
+                  class="form-textarea"
+                  placeholder=" "
+                ></textarea>
+                <label for="comment" class="textarea-label">Комментарий</label>
               </div>
-              <div class="form-field">
-                <label for="">
-                  <input type="checkbox" name="" id="" />
+              <div class="form-field-checkbox">
+                <label for="checkbox-agreement">
+                  <input
+                    type="checkbox"
+                    name="agreement"
+                    value="agreement-field"
+                    id="checkbox-agreement"
+                  />
                   <span class="modal-form-span"
                     >Соглашаюсь с рассылкой и принимаю<a href="#"
                       >Условия договора</a
@@ -444,7 +474,14 @@
               </li>
             </ul>
           </div>
-          <button class="button-secondary">Подписаться</button>
+          <div class="form-footer">
+            <b class="form-call">Подпишитесь на рассылку</b>
+            <form action="#">
+              <input type="text" placeholder="E-mail" class="footer-input" />
+
+              <button class="button-secondary">Подписаться</button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
