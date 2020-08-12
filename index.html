@@ -117,12 +117,12 @@
         </div>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
+            <button class="close-icon" data-modal-close></button>
             <form action="#">
               <h2 class="form-title">
                 Оставьте свои данные, мы вам перезвоним
               </h2>
               <div class="form-field">
-                <span class="icon"></span>
                 <input
                   type="text"
                   name="name"
@@ -131,6 +131,13 @@
                   placeholder=" "
                 />
                 <label for="name" class="form-label">Имя</label>
+                <span class="form-icon">
+                  <svg class="person-input">
+                    <use
+                      href="./img/sprite-modal.svg#icon-person-black-18dp-1"
+                    ></use>
+                  </svg>
+                </span>
               </div>
               <div class="form-field">
                 <input
@@ -141,6 +148,13 @@
                   placeholder=" "
                 />
                 <label for="tel" class="form-label">Телефон</label>
+                <span class="form-icon">
+                  <svg class="person-input">
+                    <use
+                      href="./img/sprite-modal.svg#icon-phone-black-18dp-1"
+                    ></use>
+                  </svg>
+                </span>
               </div>
               <div class="form-field">
                 <input
@@ -151,6 +165,13 @@
                   placeholder=" "
                 />
                 <label for="mail" class="form-label">Почта</label>
+                <span class="form-icon">
+                  <svg class="person-input">
+                    <use
+                      href="./img/sprite-modal.svg#icon-email-black-18dp-1"
+                    ></use>
+                  </svg>
+                </span>
               </div>
               <div class="form-field">
                 <textarea
@@ -162,22 +183,25 @@
                 <label for="comment" class="textarea-label">Комментарий</label>
               </div>
               <div class="form-field-checkbox">
-                <label for="checkbox-agreement">
+                <label for="checkbox-agreement" class="checkbox-label">
                   <input
                     type="checkbox"
                     name="agreement"
                     value="agreement-field"
                     id="checkbox-agreement"
+                    class="form-checkbox"
                   />
+                  <span class="checkbox-icon"></span>
                   <span class="modal-form-span"
-                    >Соглашаюсь с рассылкой и принимаю<a href="#"
+                    >Соглашаюсь с рассылкой и принимаю
+                    <a class="span-aggrement" href="#"
                       >Условия договора</a
                     ></span
                   >
                 </label>
               </div>
 
-              <button data-modal-close>Отправить</button>
+              <button class="modal-button">Отправить</button>
             </form>
           </div>
         </div>
