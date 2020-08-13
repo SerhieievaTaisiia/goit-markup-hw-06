@@ -183,14 +183,14 @@
                 <label for="comment" class="textarea-label">Комментарий</label>
               </div>
               <div class="form-field-checkbox">
+                <input
+                  type="checkbox"
+                  name="agreement"
+                  value="agreement-field"
+                  id="checkbox-agreement"
+                  class="form-checkbox"
+                />
                 <label for="checkbox-agreement" class="checkbox-label">
-                  <input
-                    type="checkbox"
-                    name="agreement"
-                    value="agreement-field"
-                    id="checkbox-agreement"
-                    class="form-checkbox"
-                  />
                   <span class="checkbox-icon"></span>
                   <span class="modal-form-span"
                     >Соглашаюсь с рассылкой и принимаю
@@ -502,7 +502,12 @@
           <div class="form-footer">
             <b class="form-call">Подпишитесь на рассылку</b>
             <form action="#">
-              <input type="text" placeholder="E-mail" class="footer-input" />
+              <input
+                type="text"
+                name="name"
+                placeholder="E-mail"
+                class="footer-input"
+              />
 
               <button class="button-secondary">Подписаться</button>
             </form>
